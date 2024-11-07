@@ -1,7 +1,9 @@
 services:
   webserver:
+    container_name: django-docker-prod
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: gunicorn --config gunicorn_config.py launcher.wsgi:application
+    # command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code
     ports:
