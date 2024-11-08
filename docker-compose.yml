@@ -8,3 +8,7 @@ services:
       - .:/code
     ports:
       - "8000:8000"
+# sudo apt-get install certbot python3-certbot-nginx
+# sudo certbot --nginx -d your-domain.com -d www.eventos.pi.gov.br
+# sudo certbot --nginx -d your-domain.com -d eventos.pi.gov.br
+# sudo certbot --nginx -d eventos.pi.gov.br
