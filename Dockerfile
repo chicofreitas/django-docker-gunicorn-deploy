@@ -17,4 +17,4 @@ COPY . /code/
 
 RUN python manage.py migrate
 
-# CMD ["gunicorn", "--config", "gunicorn_config.py", "launcher.wsgi:application"]
+# CMD ["gunicorn", "--config", "gunicorn_config.py", "soucer.wsgi:application"]
